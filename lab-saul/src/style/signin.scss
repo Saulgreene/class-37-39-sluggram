@@ -1,5 +1,5 @@
-$background: './assets/foodiebr.jpg';
-
+// $background: './assets/foodiebr.jpg';
+//
 body {
   background-image: url('./assets/foodiebr.jpg');
   background-size: cover;
@@ -7,20 +7,90 @@ body {
   background-position: center center;
   height: 100vh;
   width: 100vw;
+  font-family: sans-serif;
+  font-style: oblique
+  background-size(cover)
+  filter(blur(100px) greyscale(35%));
+}
+//
+// #login-info {
+//   width: 60%;
+//   color: yellow;
+//   border: 2px solid red;
+// }
+//
+// #content-splash {
+//   border: 2px solid white;
+//   background: rgba(0,0,0,.7);
+//   height: 100vh;
+//   width: 100vw;
+//   z-index: 9
+// }
+//
+// #content-splash li {
+//   display: inline;
+//   margin: auto;
+// }
+// #content-splash h2 {
+//   margin: auto;
+// }
+
+// @import compass
+
+// Only looks good in Webkit, degrades gracefully but unattracively in browsers that do not support filter()
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 200;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+  background-image: url(./assets/foodiebr.jpg)
+  background-size(cover)
+  filter(blur(10px));
+}
+#login-info li{
+  list-style: none;
+}
+h2 {
+  margin-top: 2em;
+  font-size: 3em;
+}
+h3 {
+  margin-top: 1em;
+  font-size: 2em;
 }
 
-#login-info {
-  width: 60%;
-  color: yellow;
-  // padding-left: calc()
-  margin-top: 35%;
-  border: 2px solid red;
+h2::after {
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('./assets/foodiebr.jpg')
+  background-size(cover)
+  filter(blur(10px));
+}
+p {
+  position: absolute;
+  bottom: -5em;
+  width: 100%;
+  height: 4em;
+  line-height: 4em;
+  background: black;
+  padding: .25em .5em;
+  text-decoration: none;
+  background: rgba(white, .1);
+  padding: 0 .2em;
+  border-radius: .25em;
+  color: white;
 }
 
-#content-splash {
-  width: 50%;
-  margin-left: calc(50% - 50px);
-  margin-top: calc(40% - 50px);
-  margin-top: a;
-  border: 2px solid white;
+html {
+  min-height: 10em
 }
