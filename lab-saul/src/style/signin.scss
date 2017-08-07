@@ -11,35 +11,6 @@ body {
   font-style: oblique
   background-size(cover)
   filter(blur(100px) greyscale(35%));
-}
-//
-// #login-info {
-//   width: 60%;
-//   color: yellow;
-//   border: 2px solid red;
-// }
-//
-// #content-splash {
-//   border: 2px solid white;
-//   background: rgba(0,0,0,.7);
-//   height: 100vh;
-//   width: 100vw;
-//   z-index: 9
-// }
-//
-// #content-splash li {
-//   display: inline;
-//   margin: auto;
-// }
-// #content-splash h2 {
-//   margin: auto;
-// }
-
-// @import compass
-
-// Only looks good in Webkit, degrades gracefully but unattracively in browsers that do not support filter()
-
-body {
   width: 100%;
   overflow-x: hidden;
   font-family: 'Helvetica Neue', sans-serif;
@@ -47,12 +18,11 @@ body {
   text-align: center;
   -webkit-font-smoothing: antialiased;
   color: black;
-  background-image: url(./assets/foodiebr.jpg)
-  background-size(cover)
-  filter(blur(10px));
 }
+
 #login-info li{
   list-style: none;
+  color: white;
 }
 h2 {
   margin-top: 2em;
